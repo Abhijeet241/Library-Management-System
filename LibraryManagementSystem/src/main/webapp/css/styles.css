@@ -1,0 +1,106 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.container {
+    width: 25%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.extra-container {
+    position: fixed;
+    top: 50px;
+    left: 450px;
+    right: 0;
+    z-index: 1000; /* Ensure it's on top of other content */
+    text-align: center;
+    color: red;
+    text-shadow: 2px 2px 4px #000000;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2px;
+    border-radius: 0 0 10px 10px; /* Rounded corners only at the bottom */
+    width: 70%;
+    max-width: 600px;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    color:red;
+}
+
+a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+button i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
